@@ -1,0 +1,121 @@
+/* Attention-card */
+
+.attention-card {
+    position: relative;
+    text-align: center;
+    background-image: url("../img/free-lesson-card.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-right: 88px;
+    margin-left: 88px;
+    border-radius: 10px;
+}
+
+.attention-card::before {
+    position: absolute;
+    z-index: 0;
+    display: block;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(171, 4, 51, 0.8);
+    border-radius: 10px;
+}
+
+.attention-card__title {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto 16px;
+    max-width: 230px;
+}
+
+.attention-card__text {
+    position: relative;
+    z-index: 1;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 149%;
+    margin: 0 auto 16px;
+    max-width: 230px;
+}
+
+.attention-card__button {
+    position: relative;
+    z-index: 1;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+    color: var(--color-white);
+    width: 125px;
+    height: 34px;
+    background-color: var(--color-orange);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 16px;
+}
+
+@media (min-width: 768px) {
+
+    .attention-card {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-right: 84px;
+        margin-left: 84px;
+    }
+
+    .attention-card__title,
+    .attention-card__text {
+        max-width: 557px;
+    }
+    
+    .attention-card__text {
+        font-size: 24px;
+    }
+    
+    .attention-card__button {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) {
+    
+    .attention-card {
+        margin-right: 42px;
+        margin-left: 42px;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+    .attention-card {
+        padding: 50px 139px;
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+
+    .attention-card__title {
+        margin-top: 0;
+        padding-top: 18px;
+        text-align: center;
+    }
+
+    .attention-card__button {
+        border-radius: 32px;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .attention-card {
+        padding-right: 324px;
+        padding-left: 324px;
+        margin-right: 130px;
+        margin-left: 130px;
+    }
+}
